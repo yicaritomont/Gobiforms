@@ -136,7 +136,7 @@
                 labels: ["Chrome", "Firefox", "Safari", "Opera", "IE"]
             };
             var doughnutPieOptions = {
-                cutoutPercentage: 70,gemini
+                cutoutPercentage: 70,
                 animationEasing: "easeOutBounce",
                 animateRotate: true,
                 animateScale: false,
