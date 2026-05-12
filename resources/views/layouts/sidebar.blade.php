@@ -86,6 +86,9 @@
          <li class="nav-item {{ active_class(['user-pages/login']) }}">
             <a class="nav-link" href="{{ route('completedMedition')}}">Reporte mediciones Completas</a>
           </li>
+          <li class="nav-item {{ active_class(['user-pages/login']) }}">
+            <a class="nav-link" href="{{ route('consolidatedReport')}}">Consolidado General</a>
+          </li>
         </ul>
       </div>
     </li>

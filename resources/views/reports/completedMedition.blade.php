@@ -23,8 +23,31 @@
                 <span class="d-block text-muted pt-2 font-size-sm">Este listado le permite visualizar los usuarios que han completado a totalidad la medición de madurez.</span>
             </h3>
         </div>
+        <div class="card-toolbar">
+            <a href="{{ route('consolidatedReport') }}" class="btn btn-primary font-weight-bolder">
+                <i class="la la-chart-bar"></i>Ver Consolidado General
+            </a>
+        </div>
     </div>
     <div class="card-body">
+        <form action="{{ route('completedMedition') }}" method="GET" class="row g-3 align-items-end mb-5">
+            <div class="col-md-4">
+                <label for="subregion" class="form-label">Filtrar por Subregión</label>
+                <select name="subregion" id="subregion" class="form-select">
+                    <option value="">Todas las subregiones</option>
+                    <option value="SNOR" {{ $subregion == 'SNOR' ? 'selected' : '' }}>Subregión Norte</option>
+                    <option value="SNEV" {{ $subregion == 'SNEV' ? 'selected' : '' }}>Subregión Nevados</option>
+                    <option value="SCEN" {{ $subregion == 'SCEN' ? 'selected' : '' }}>Subregión Ibagué (centro)</option>
+                    <option value="SORI" {{ $subregion == 'SORI' ? 'selected' : '' }}>Subregión Oriente</option>
+                    <option value="SURO" {{ $subregion == 'SURO' ? 'selected' : '' }}>Subregión Sur-Oriente</option>
+                    <option value="SSUR" {{ $subregion == 'SSUR' ? 'selected' : '' }}>Subregión Sur</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-secondary w-100">Filtrar</button>
+            </div>
+        </form>
+
         <!--begin: Datatable-->
         <table class="table table-bordered table-checkable" id="kt_datatable">
             <thead>

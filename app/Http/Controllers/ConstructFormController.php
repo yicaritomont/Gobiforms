@@ -301,7 +301,8 @@ class ConstructFormController extends Controller
                 'TotalScore' => $score,
                 'DimensionScore' => $dimensionScore,
                 'Level' => $level,
-                'DimensionsGraph' => [$dimensionBy[$attemp->id]]
+                'DimensionsGraph' => [$dimensionBy[$attemp->id]],
+                'DetailedAnswers' => AnsweredUser::with(['question', 'anwser'])->where('attemp_id', $attemp->id)->get()
             ];
             $dimensions = Dimension::where('status', '=', '1')->pluck('name')->toArray();
  

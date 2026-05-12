@@ -15,6 +15,7 @@ use App\Http\Controllers\QuestionsController;
 use App\Http\Controllers\AnswerController;
 use App\Http\Controllers\ConstructFormController;
 use App\Http\Controllers\Auth\RemindersController;
+use App\Http\Controllers\ReportsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -86,6 +87,9 @@ Route::group( ['middleware' => ['auth']], function() {
 
     // Rutas para Reportes
     Route::get("completedMedition",[App\Http\Controllers\ReportsController::class, 'completedMedition'])->name('completedMedition');
+    Route::get("consolidatedReport",[App\Http\Controllers\ReportsController::class, 'consolidatedReport'])->name('consolidatedReport');
+
+
 
     Route::resource('users', UserController::class);
 
