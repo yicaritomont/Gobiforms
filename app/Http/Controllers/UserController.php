@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Http\Helpers\Equivalencias;
 use App\Http\Controllers\Auth\RegisterController;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -18,7 +19,10 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::all();
+        $users = User::all()->map(function($user) {
+        $user->size_label = Equivalencias::whichZone($user->size_organization);
+        return $user;
+         });
         return view("user.index", compact("users"));
     }
 

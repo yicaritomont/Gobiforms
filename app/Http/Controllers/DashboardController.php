@@ -31,12 +31,16 @@ class DashboardController extends Controller {
             'rangetotalIntentsDone' => $rangetotalIntentsDone,
             'rangetotalIntentsProgress' => $rangetotalIntentsProgress,
         ];
-        // Información cantidad de USUARIOS por TAMAÑO ORGANIZACION.
-        $userByM10 = User::where('size_organization','M10')->count();
-        $userByM50 = User::where('size_organization','M50')->count();
-        $userByM50M250 = User::where('size_organization','M50M250')->count();
-        $userByM250 = User::where('size_organization','M250')->count();
-        $usersCountByOrganizationSize = [$userByM10, $userByM50, $userByM50M250, $userByM250 ];
+        // Información cantidad de USUARIOS por zona.
+      
+        $SNOR = user::where('size_organization', 'SNOR') -> count();
+        $SNEV = user::where('size_organization', 'SNEV') -> count();
+        $SCEN = user::where('size_organization', 'SCEN') -> count();
+        $SORI = user::where('size_organization', 'SORI') -> count();
+        $SURO = user::where('size_organization', 'SURO') -> count();
+        $SSUR = user::where('size_organization', 'SSUR') -> count();
+
+        $usersCountByOrganizationSize = [$SNOR,$SNEV,$SCEN,$SORI,$SURO,$SSUR ];
         return view('dashboard.dashboardAdmin', compact(
         'totalUserRegistered',
         'totalAdminRegistered',

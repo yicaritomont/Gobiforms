@@ -36,8 +36,10 @@
         <tr>                        
             <th>ID</th>
             <th>Nombre</th>
+            <th>Documento</th>
             <th>Correo</th>
             <th>Teléfono</th>
+            <th>Zona</th>
             <th>Empresa</th>
         </tr>
         </thead>
@@ -46,9 +48,11 @@
                     <tr>
                         <td>{{$user->id}}</td>
                         <td>{{$user->name}} {{$user->last_name}}</td>
+                        <td>{{$user->document}}</td>
                         <td>{{$user->email}}</td>
                         <td>{{$user->phone_number}}</td>
-                        <td>{{$user->name_organization}}</td>                       
+                        <td>{{$user->size_organization}} - {{$user->size_label}}</td>
+                        <td>{{$user->name_organization}}</td>                           
                     </tr>
                 @endforeach
             </tbody>

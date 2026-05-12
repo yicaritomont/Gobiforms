@@ -6,6 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Http\Helpers\Equivalencias;
 use Laravel\Sanctum\HasApiTokens;
 use App\Models\Roles;
 
@@ -49,5 +50,11 @@ class User extends Authenticatable {
      */
     public function rolUsuario() {
         return $this->belongsTo('App\Models\Roles', 'rol_id');
+    }
+
+
+    public function getZoneAttribute($value)
+    {
+        return Equivalencia::whichZone($value->size_organization);
     }
 }

@@ -96,7 +96,7 @@
                     <option value="SCEN">Subregión Ibagué (centro)</option>
                     <option value="SORI">Subregión Oriente</option>
                     <option value="SURO">Subregión Sur-Oriente</option>
-                    <option value="SUR">Subregión Sur</option>
+                    <option value="SSUR">Subregión Sur</option>
                 </select>
                 <div class="input-group-append">
                     <span class="input-group-text">

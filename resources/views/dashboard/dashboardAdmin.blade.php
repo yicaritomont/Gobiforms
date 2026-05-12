@@ -37,14 +37,14 @@
                     <i class="mdi mdi-receipt text-warning icon-lg"></i>
                 </div>
                 <div class="float-right">
-                    <p class="mb-0 text-right">Mediciones de madurez terminadas</p>
+                    <p class="mb-0 text-right"> Cuestrionarios terminados</p>
                     <div class="fluid-container">
                     <h3 class="font-weight-medium text-right mb-0">{{$totalIntentsDone}}</h3>
                     </div>
                 </div>
                 </div>
                 <hr>
-                <i class="mdi mdi-information mr-1" aria-hidden="true"></i> Las mediciones de madurez que los usuarios han contestado en su totalidad.
+                <i class="mdi mdi-information mr-1" aria-hidden="true"></i> Los Cuestrionariosque los usuarios han contestado en su totalidad.
             </div>
             </div>
         </div>
@@ -56,14 +56,14 @@
                     <i class="mdi mdi-poll-box text-success icon-lg"></i>
                 </div>
                 <div class="float-right">
-                    <p class="mb-0 text-right">Mediciones de madurez sin terminar</p>
+                    <p class="mb-0 text-right"> Cuestionarios sin terminar</p>
                     <div class="fluid-container">
                     <h3 class="font-weight-medium text-right mb-0">{{$totalIntentsProgress}}</h3>
                     </div>
                 </div>
                 </div>
                 <hr>
-                <i class="mdi mdi-information mr-1" aria-hidden="true"></i> Las mediciones de madurez que los usuarios aún no terminan de completar.
+                <i class="mdi mdi-information mr-1" aria-hidden="true"></i> Los cuestionarios que los usuarios aún no terminan de completar.
             </div>
             </div>
         </div>
@@ -74,15 +74,15 @@
             <div class="card">
                 <div class="card-body">
                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                    <h2 class="card-title mb-0">Mediciones terminadas Vs Incompletas</h2>
+                    <h2 class="card-title mb-0">Cuestionarios terminados Vs Incompletos</h2>
                     <div class="wrapper d-flex">
                         <div class="d-flex align-items-center mr-3">
                             <span class="dot-indicator bg-success"></span>
-                            <p class="mb-0 ml-2 text-muted">Terminadas</p>
+                            <p class="mb-0 ml-2 text-muted">Terminados</p>
                         </div>
                         <div class="d-flex align-items-center">
                             <span class="dot-indicator bg-primary"></span>
-                            <p class="mb-0 ml-2 text-muted">Incompletas</p>
+                            <p class="mb-0 ml-2 text-muted">Incompletos</p>
                         </div>
                     </div>
                     </div>
@@ -141,7 +141,7 @@
             <div class="card-body">
                 <div class="row">
                 <div class="col-md-2">
-                    <h4 class="card-title font-weight-medium mb-3">Tamaño de empresas registrados</h4>
+                    <h4 class="card-title font-weight-medium mb-3">Zonas registradas</h4>
                 </div>
                 <div class="col-md-10 d-flex align-items-end mt-4 mt-md-0">
                     <input type="hidden" id="info-user-organization-size" value="{{json_encode($usersCountByOrganizationSize)}}">

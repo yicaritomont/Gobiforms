@@ -17,7 +17,7 @@
 namespace App\Http\Helpers;
 use Illuminate\Support\Carbon;
 
-class Equivalencia {
+class Equivalencias {
     private static $tieneTodosLosPermisos = 'A';
 
     private static $esUsuarioAdmin = [
@@ -103,5 +103,42 @@ class Equivalencia {
         $parse = Carbon::parse($fecha);
         $fechas =  Carbon::createFromFormat('Y-m-d H:i:s', $parse);
         return ['fecha_escogida' => $fecha, 'fecha_60_min' => $fechas->addMinutes(60)];
+    }
+
+    public static function whichZone($zone) {
+        switch ($zone) {
+            case "SNOR":
+            $stringZone= "Subregión Norte";
+            break;
+
+            case "SNEV":
+            $stringZone= "Subregión Nevados";
+            break;
+
+            case "SCEN":
+            $stringZone= "Subregión Ibagué (centro)";
+            break;
+
+            case "SORI":
+            $stringZone= "Subregión Oriente";
+            break;
+
+            case "SURO":
+            $stringZone= "Subregión Sur-Oriente";
+            break;
+
+            case "SSUR":
+            $stringZone= "Subregión Sur";
+            break;
+
+            case 'value':
+            # code...
+            break;
+            
+            default:
+            $stringZone ="NR";
+            break;
+        }
+        return $stringZone;
     }
 }

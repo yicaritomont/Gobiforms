@@ -50,7 +50,7 @@
                 labels: totalIntents,
                 datasets: [
                     {
-                        label: "Mediciones Completas",
+                        label: "Cuestionarios Completos",
                         data: totalIntentsCompleted,
                         backgroundColor: "#2196f3",
                         borderColor: "#0c83e2",
@@ -58,7 +58,7 @@
                         fill: true
                     },
                     {
-                        label: "Mediciones En Progreso",
+                        label: "Cuestionarios En Progreso",
                         data: totalIntentsProgress,
                         backgroundColor: "#19d895",
                         borderColor: "#15b67d",
@@ -136,7 +136,7 @@
                 labels: ["Chrome", "Firefox", "Safari", "Opera", "IE"]
             };
             var doughnutPieOptions = {
-                cutoutPercentage: 70,
+                cutoutPercentage: 70,gemini
                 animationEasing: "easeOutBounce",
                 animateRotate: true,
                 animateScale: false,
@@ -516,10 +516,12 @@
                 type: "bar",
                 data: {
                     labels: [
-                        "Menos de 10 Colaboradores",
-                        "Menos de 50 Colaboradores",
-                        "Más de 50 y Menos de 250 Colaboradores",
-                        "Más de 250 Colaboradores",
+                        "Subregión Norte",
+                        "Subregión Nevados",
+                        "Subregión Ibagué (centro)",
+                        "Subregión Oriente",
+                        "Subregión Sur-Oriente",
+                        "Subregión Sur",
                     ],
                     datasets: [
                         {
