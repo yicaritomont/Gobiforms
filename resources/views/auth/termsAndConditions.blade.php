@@ -1,9 +1,9 @@
 
-Bienvenido a DIAT (Digital Insight Assesment Tool), una plataforma dedicada a medir el nivel de madurez digital en empresas del sector gastronómico de Ibagué. Al acceder y utilizar nuestro sitio web, aceptas cumplir con los siguientes términos y condiciones. Si no estás de acuerdo con alguno de estos términos, te recomendamos no utilizar nuestro sitio.
+Bienvenido a Gobiforms, una plataforma dedicada a medir el nivel de madurez digital en empresas del sector gastronómico de Ibagué. Al acceder y utilizar nuestro sitio web, aceptas cumplir con los siguientes términos y condiciones. Si no estás de acuerdo con alguno de estos términos, te recomendamos no utilizar nuestro sitio.
     <ol>
         <li>Definiciones
             <ol>
-                <li>"Plataforma" se refiere al sitio web DIAT (Digital Insight Assesment Tool) y a todos sus servicios relacionados.</li>
+                <li>"Plataforma" se refiere al sitio web Gobiforms y a todos sus servicios relacionados.</li>
                 <li>"Usuario" se refiere a cualquier persona que acceda y utilice la Plataforma.</li>
             </ol>
         </li>
@@ -20,14 +20,14 @@ Bienvenido a DIAT (Digital Insight Assesment Tool), una plataforma dedicada a me
         </li>
         <li>Propiedad Intelectual
             <ol>
-                <li>Todos los contenidos y materiales en la Plataforma, incluidos, entre otros, textos, gráficos, logotipos, imágenes y software, son propiedad de DIAT (Digital Insight Assesment Tool) o de sus licenciantes y están protegidos por las leyes de propiedad intelectual.</li>
-                <li>No se permite la reproducción, distribución, modificación o uso no autorizado de estos contenidos sin el permiso expreso por escrito de DIAT (Digital Insight Assesment Tool).</li>
+                <li>Todos los contenidos y materiales en la Plataforma, incluidos, entre otros, textos, gráficos, logotipos, imágenes y software, son propiedad de Gobiforms o de sus licenciantes y están protegidos por las leyes de propiedad intelectual.</li>
+                <li>No se permite la reproducción, distribución, modificación o uso no autorizado de estos contenidos sin el permiso expreso por escrito de Gobiforms.</li>
             </ol>
         </li>
         <li>Limitación de Responsabilidad
             <ol>
                 <li>La Plataforma y sus servicios se proporcionan "tal cual" y "según disponibilidad". No garantizamos que el sitio web estará libre de errores o interrupciones.</li>
-                <li>DIAT (Digital Insight Assesment Tool) no se hace responsable de cualquier daño directo, indirecto, incidental, especial o consecuente que resulte del uso o la imposibilidad de uso de la Plataforma.</li>
+                <li>Gobiforms no se hace responsable de cualquier daño directo, indirecto, incidental, especial o consecuente que resulte del uso o la imposibilidad de uso de la Plataforma.</li>
             </ol>
         </li>
         <li>Enlaces a Terceros

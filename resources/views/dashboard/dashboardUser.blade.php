@@ -21,7 +21,7 @@
 @section('content')
 
 <div class="row mt-5">
-  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 grid-margin stretch-card">
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 grid-margin stretch-card">
     <div class="card card-statistics">
       <div class="card-body">
         <div class="d-flex flex-md-column flex-xl-row flex-wrap justify-content-between align-items-md-center justify-content-xl-between">
@@ -29,24 +29,23 @@
             <i class="mdi mdi-auto-fix text-warning icon-lg"></i>
           </div>
           <div class="float-right">
-            <p class="mb-0 text-right">Paso 1</p>
             <div class="fluid-container">
-              <h2 class="font-weight-medium text-right mb-0">Mi Medición <br> #{{$attemptsInProgressCount}}</h2>
+              <h2 class="font-weight-medium text-right mb-0">Mis Cuestionarios #{{$attemptsInProgressCount}}</h2>
             </div>
           </div>
         </div>
         <p class="text-muted mt-3 mb-0 text-left text-md-center text-xl-left">
           <a  href="{{ route('startForm.index') }}" class="btn btn-warning btn-lg"
-          @if ($attemptsCompletedCount >= 3) 
+          @if ($attemptsCompletedCount >= 1) 
             style="pointer-events: none; opacity: 0.5;" 
-            title="Ya completo los 3 intentos"
-          @endif> Iniciar Medición</a>
+            title="Ya completo el cuestionario"
+          @endif> Iniciar Cuestionario</a>
           <hr>
-          <i class="mdi mdi-information mr-1" aria-hidden="true"></i>Tendrás una serie de fomularios que permitirán evaluar tu estado actual. </p>
+          <i class="mdi mdi-information mr-1" aria-hidden="true"></i>Tendrás una serie de fomularios que permitirán evaluar la gestión actual. </p>
       </div>
     </div>
   </div>
-  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 grid-margin stretch-card">
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 grid-margin stretch-card">
     <div class="card card-statistics">
       <div class="card-body">
         <div class="d-flex flex-md-column flex-xl-row flex-wrap justify-content-between align-items-md-center justify-content-xl-between">
@@ -54,9 +53,8 @@
             <i class="mdi mdi-receipt text-success icon-lg"></i>
           </div>
           <div class="float-right">
-            <p class="mb-0 text-right">Paso 2</p>
             <div class="fluid-container">
-              <h2 class="font-weight-medium text-right mb-0">Mis resultados</h2>
+              <h2 class="font-weight-medium text-right mb-0">Mis respuestas</h2>
             </div>
           </div>
         </div>
@@ -64,40 +62,14 @@
           <a  href="{{ route('showResults') }}" class="btn btn-success btn-lg" 
           @if ($attemptsCompletedCount < 1) 
             style="pointer-events: none; opacity: 0.5;" 
-            title="Complete at least one attempt to unlock this button"
-          @endif> Ver Mis Resultados</a>
+            title="Complete el cuestionario para hablitar esta opción"
+          @endif> Ver Mis Respuestas</a>
           
           <hr>
-          <i class="mdi mdi-information mr-1" aria-hidden="true"></i>Podrás conocer los resultados de tu medición una vez almacenes el formulario completo. Recuerda que tienes 3 evaluaciones disponibles. </p>
+          <i class="mdi mdi-information mr-1" aria-hidden="true"></i>Podrás recordar las respuestas seleccionadas. Una vez finalices el cuestionario. </p>
       </div>
     </div>
   </div>
-  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 grid-margin stretch-card">
-    <div class="card card-statistics">
-      <div class="card-body">
-        <div class="d-flex flex-md-column flex-xl-row flex-wrap justify-content-between align-items-md-center justify-content-xl-between">
-          <div class="float-left">
-            <i class="mdi mdi-poll-box text-primary icon-lg"></i>
-          </div>
-          <div class="float-right">
-            <p class="mb-0 text-right">Paso 3</p>
-            <div class="fluid-container">
-              <h2 class="font-weight-medium text-right mb-0">Mis Recomendaciones</h2>
-            </div>
-          </div>
-        </div>
-        <p class="text-muted mt-3 mb-0 text-left text-md-center text-xl-left">
-          <a  href="{{ route('showRecomendations') }}" class="btn btn-primary btn-lg"
-          @if ($attemptsCompletedCount < 1) 
-            style="pointer-events: none; opacity: 0.5;" 
-            title="Complete at least one attempt to unlock this button"
-          @endif> Ver Recomendaciones</a>
-          <hr>
-          <i class="mdi mdi-information mr-1" aria-hidden="true"></i>Según tus resultados tendrás disponible una serie de recomendaciones para tu proceso de estabilización en madurez digital. </p>
-      </div>
-    </div>
-  </div>
-  
 </div>
 
 

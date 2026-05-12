@@ -63,11 +63,11 @@ class LoginController extends Controller
         }
         // before login , first validate if a email exists
         $data = [
-            'email'     => $_POST['email'],
+            'document'     => $_POST['email'],
             'password'   =>  $_POST['password']
         ];
         
-        if ( !$user = User::where('email',$_POST['email'])->first())
+        if ( !$user = User::where('document',$_POST['email'])->first())
         {
             // return a fail user
             return Redirect::to('login/')->with(['message'=> 'Error! No se puede iniciar sesión, verifique e intente','alert'=> 'danger']);

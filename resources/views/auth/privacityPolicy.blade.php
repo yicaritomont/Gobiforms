@@ -1,4 +1,4 @@
-<p>En DIAT (Digital Insight Assesment Tool), nos comprometemos a proteger la privacidad de nuestros usuarios. Esta política de privacidad describe cómo recopilamos, utilizamos y compartimos tu información personal.</p>
+<p>En GobiForms, nos comprometemos a proteger la privacidad de nuestros usuarios. Esta política de privacidad describe cómo recopilamos, utilizamos y compartimos tu información personal.</p>
     
     <h4>1. Información que Recopilamos</h4>
     <p>Podemos recopilar la siguiente información cuando utilizas nuestra plataforma:</p>
@@ -22,7 +22,7 @@
     <ul>
         <li>Con tu consentimiento expreso.</li>
         <li>Para cumplir con obligaciones legales o responder a solicitudes de autoridades gubernamentales.</li>
-        <li>Para proteger los derechos, propiedad o seguridad de DIAT (Digital Insight Assesment Tool), nuestros usuarios u otros.</li>
+        <li>Para proteger los derechos, propiedad o seguridad de GobiForms, nuestros usuarios u otros.</li>
     </ul>
     
     <h4>4. Seguridad de la Información</h4>

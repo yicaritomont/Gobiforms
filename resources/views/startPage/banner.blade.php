@@ -5,7 +5,7 @@
     
     <div class="container">
       <a class="navbar-brand brand-logo" href="{{ url('/') }}"><br>
-      <img class="img-logo" src="{{ url('assets/images/logo_2.jpg') }}" alt="logo" /> </a>
+      <h1>GobiForms</h1></a>
     </div>
     <ul class="navbar-nav navbar-nav-left header-links">
       @guest

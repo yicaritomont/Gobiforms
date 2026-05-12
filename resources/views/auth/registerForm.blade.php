@@ -59,7 +59,7 @@
             </div>
             <div class="form-group">
                 <div class="input-group">
-                <input type="text" name="email" id="email" class="form-control" placeholder="Correo Electrónico">
+                <input type="text" name="document" id="document" class="form-control" placeholder="Número Documento">
                 <div class="input-group-append">
                     <span class="input-group-text">
                     <i class="mdi mdi-check-circle-outline"></i>
@@ -69,7 +69,7 @@
             </div>
             <div class="form-group">
                 <div class="input-group">
-                <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña">
+                <input type="text" name="email" id="email" class="form-control" placeholder="Correo Electrónico">
                 <div class="input-group-append">
                     <span class="input-group-text">
                     <i class="mdi mdi-check-circle-outline"></i>
@@ -90,11 +90,13 @@
             <div class="form-group">
                 <div class="input-group">
                 <select class="form-control" name="size_organization" id="size_organization">
-                    <option>Tamaño de la organización</option>
-                    <option value="M10">Menos de 10 Colaboradores</option>
-                    <option value="M50">Menos de 50 Colaboradores</option>
-                    <option value="M50M250">Más de 50 y Menos de 250 Colaboradores</option>
-                    <option value="M250">Más de 250 Colaboradores</option>
+                    <option>SubRegión</option>
+                    <option value="SNOR">Subregión Norte</option>
+                    <option value="SNEV">Subregión Nevados</option>
+                    <option value="SCEN">Subregión Ibagué (centro)</option>
+                    <option value="SORI">Subregión Oriente</option>
+                    <option value="SURO">Subregión Sur-Oriente</option>
+                    <option value="SUR">Subregión Sur</option>
                 </select>
                 <div class="input-group-append">
                     <span class="input-group-text">

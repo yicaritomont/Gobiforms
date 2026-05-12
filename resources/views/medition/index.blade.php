@@ -19,10 +19,10 @@
     <div class="card-header flex-wrap py-3">
         <div class="card-title">
             <h3 class="card-label">
-                Medición
+                DSECRIPCION DEL FORMULARIO / CUESTIONARIO
             </h3>
             <p>
-            La importancia de tener diferentes niveles de madurez digital radica en la capacidad de proporcionar una representación más detallada y precisa del estado digital de una organización. Estos niveles permiten categorizar las capacidades y prácticas digitales en etapas distintas, desde un nivel inicial hasta un nivel avanzado. Al tener esta estructura y para este trabajo de investigación se plantearon cuatro niveles. Con el propósito que las organizaciones puedan evaluar de manera más refinada su posición en el espectro digital, identificando áreas específicas que requieren atención y mejoras. Esto facilita una comprensión más completa de los desafíos y oportunidades en el camino hacia la transformación digital.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa saepe ut doloribus illo placeat dignissimos non aut doloremque provident possimus minus praesentium fuga rem, iusto voluptatibus quae eum sint repudiandae?.
             </p>
         </div>
     </div>

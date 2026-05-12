@@ -13,10 +13,10 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th><a href="http://localhost/DigitalAdvanceCheck/public" style=" width: 53% !important;
+                            <th><a  href="{{ url('/') }}" style=" width: 53% !important;
   height: 100% !important;
   border-radius: 0 !important;
-}" class="navbar-brand brand-logo"><img src="http://localhost/DigitalAdvanceCheck/public/assets/images/logo_2.jpg" alt="logo"></a> </th>
+}" class="navbar-brand brand-logo"><img src="{{ url('/') }}" alt="logo"></a> </th>
                             <th><h3 class="card-label"> Resumen General</h3></th>
                         </tr>
                        

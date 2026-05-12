@@ -12,13 +12,11 @@
             <div class="auto-form-wrapper">
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
-                    <div class="form-group center">                       
-                        <div class="input-group">
+                    <div style="width: 50%;margin: 0 auto;padding-bottom: 10%;">                       
                             <img src="{{url('assets/images/logo_2.jpg')}}"></img>
-                        </div><br><br>
                     </div>
                     <div class="form-group">
-                        <label class="label">Correo Electrónico</label>
+                        <label class="label">Número de Documento</label>
                         <div class="input-group">
                             <input type="text" name="email" class="form-control" placeholder="Correo electrónico">
                             <div class="input-group-append">
@@ -56,7 +54,7 @@
                 </form>
             </div>
             
-            <p class="footer-text text-center text-black">Proyecto de grado UCC.</p>
+            <p class="footer-text text-center text-black">:)</p>
         </div>
     </div>
 </div>

@@ -56,8 +56,7 @@ class RegisterController extends Controller {
     {
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'document' => ['required', 'string', 'max:255', 'unique:users'],
         ]);
     }
 
@@ -71,16 +70,14 @@ class RegisterController extends Controller {
     {
         return User::create([
             'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
+            'document' => $data['document'],
         ]);
     }
 
     public function register(Request $request) {
-
+        $mensaje="paila no hizo nada";
         $this->validate($request, [
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8'],
+            'document' => ['required', 'string', 'max:255', 'unique:users'],
             'name' => ['required', 'string'],
             'last_name' => ['required', 'string'],
             ]);
@@ -89,11 +86,12 @@ class RegisterController extends Controller {
             $user = new User();
             $user->name = $request['name'];
             $user->last_name = $request['last_name'];
+            $user->document = $request['document'];
             $user->email = $request['email'];
             $user->phone_number = $request['phone_number'];
             $user->size_organization = $request['size_organization'];
             $user->name_organization = $request['name_organization'];
-            $user->password              = Hash::make($request['password']);
+            $user->password              = Hash::make($request['document']);
             $user->rol_id = 2;
             $user->confirmation_code     = $confirmation_code;
             $user->email_verified_at = now();
@@ -101,8 +99,8 @@ class RegisterController extends Controller {
         if ($user->save()) {
             $datos= array(
                 'nombre_persona'    => $request->name." ".$request->last_name,
-                'usuario'			=> $request->email,
-                'contrasena'		=> $request->password,
+                'usuario'			=> $request->document,
+                'contrasena'		=> $request->document,
                 'perfil'			=> 'Usuario' ,
                 'confirmation_code' => $confirmation_code,
                 'subject'           => 'Registro Usuario',               
@@ -112,7 +110,7 @@ class RegisterController extends Controller {
             //RegisterController::sendMailRegister($datos,$user,'emails.register');
             //Sendemail::Send($datos,'emails.register');
 
-            $mensaje = 'Se ha registrado un nuevo usuario con el correo '.$request['email'].' exitosamente.';
+            $mensaje = 'Se ha registrado un nuevo usuario con el documento '.$request['document'].' exitosamente.';
             
         } 
         else 
